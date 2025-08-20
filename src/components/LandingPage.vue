@@ -1029,82 +1029,83 @@
           >
             Contact Us
           </h2>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#111418] text-base font-medium leading-normal pb-2"
-              >
-                Name
-              </p>
+          <form
+            @submit.prevent="submitForm"
+            class="max-w-[480px] space-y-4 px-4 py-6 rounded-2xl"
+          >
+            <!-- Name -->
+            <label class="flex flex-col">
+              <span class="pb-1 font-medium text-gray-800">Name</span>
               <input
+                v-model="form.name"
                 placeholder="Your Name"
+                required
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] h-14 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
-                value=""
               />
             </label>
-          </div>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#111418] text-base font-medium leading-normal pb-2"
-              >
-                Email
-              </p>
+
+            <!-- Email -->
+            <label class="flex flex-col">
+              <span class="pb-1 font-medium text-gray-800">Email</span>
               <input
+                v-model="form.email"
+                type="email"
                 placeholder="Your Email"
+                required
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] h-14 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
-                value=""
               />
             </label>
-          </div>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#111418] text-base font-medium leading-normal pb-2"
-              >
-                Phone
-              </p>
+
+            <!-- Phone -->
+            <label class="flex flex-col">
+              <span class="pb-1 font-medium text-gray-800">Phone</span>
               <input
+                v-model="form.phone"
                 placeholder="Your Phone"
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] h-14 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
-                value=""
               />
             </label>
-          </div>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#111418] text-base font-medium leading-normal pb-2"
-              >
-                Subject
-              </p>
+
+            <!-- Subject -->
+            <label class="flex flex-col">
+              <span class="pb-1 font-medium text-gray-800">Subject</span>
               <input
+                v-model="form.subject"
                 placeholder="Subject"
+                required
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] h-14 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
-                value=""
               />
             </label>
-          </div>
-          <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-            <label class="flex flex-col min-w-40 flex-1">
-              <p
-                class="text-[#111418] text-base font-medium leading-normal pb-2"
-              >
-                Message
-              </p>
+
+            <!-- Message -->
+            <label class="flex flex-col">
+              <span class="pb-1 font-medium text-gray-800">Message</span>
               <textarea
+                v-model="form.message"
                 placeholder="Your Message"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] min-h-36 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
+                required
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border border-[#dcdfe5] bg-white focus:border-[#dcdfe5] h-14 placeholder:text-[#637288] p-[15px] text-base font-normal leading-normal"
               ></textarea>
             </label>
-          </div>
-          <div class="flex px-4 py-3 justify-start">
+
+            <!-- Submit button -->
+
             <button
+              type="submit"
+              :disabled="loading"
               class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#196be5] text-white text-sm font-bold leading-normal tracking-[0.015em]"
             >
-              <span class="truncate">Submit</span>
+              {{ loading ? "Sending..." : "Submit" }}
             </button>
-          </div>
+
+            <!-- Success/Error messages -->
+            <p v-if="success" class="text-green-600 text-sm pt-2">
+              ✅ Message sent successfully!
+            </p>
+            <p v-if="error" class="text-red-600 text-sm pt-2">
+              ❌ Failed to send. Try again later.
+            </p>
+          </form>
           <h2
             class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
           >
@@ -1389,17 +1390,17 @@
             >
               <a
                 class="text-[#637288] text-base font-normal leading-normal min-w-40"
-                href="#"
+                href="#services"
                 >Services</a
               >
               <a
                 class="text-[#637288] text-base font-normal leading-normal min-w-40"
-                href="#"
+                href="#pricing"
                 >Pricing</a
               >
               <a
                 class="text-[#637288] text-base font-normal leading-normal min-w-40"
-                href="#"
+                href="#contact"
                 >Contact</a
               >
             </div>
@@ -1415,6 +1416,43 @@
 
 <script setup>
 import HeaderBar from "@/components/Header.vue";
+import { reactive, ref } from "vue";
+import emailjs from "emailjs-com";
+
+const form = reactive({
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+});
+
+const loading = ref(false);
+const success = ref(false);
+const error = ref(false);
+
+const submitForm = () => {
+  loading.value = true;
+  success.value = false;
+  error.value = false;
+
+  emailjs
+    .send(
+      "service_0s6nf6q", // <-- replace with your service ID
+      "template_keppagk", // <-- replace with your template ID
+      form,
+      "LavZxzQtEbGe--I14" // <-- replace with your public key
+    )
+    .then(() => {
+      success.value = true;
+      loading.value = false;
+      Object.keys(form).forEach((k) => (form[k] = "")); // reset form
+    })
+    .catch(() => {
+      error.value = true;
+      loading.value = false;
+    });
+};
 </script>
 
 <style>
