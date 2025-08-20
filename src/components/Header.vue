@@ -40,18 +40,18 @@
 
     <!-- Desktop Nav -->
     <nav class="nav-links">
-      <a href="#">Services</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
       <button class="primary-btn">Download Our App</button>
     </nav>
 
     <!-- Mobile Menu -->
     <transition name="slide-fade">
       <div v-if="isMenuOpen" class="mobile-menu">
-        <a href="#">Services</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
         <button class="primary-btn">Download Our App</button>
       </div>
     </transition>

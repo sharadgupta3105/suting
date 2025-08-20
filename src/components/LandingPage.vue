@@ -146,6 +146,7 @@
             </div>
           </div>
           <h2
+            id="services"
             class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
           >
             Our Services
@@ -480,6 +481,7 @@
             </div>
           </div>
           <h2
+            id="pricing"
             class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
           >
             Pricing Starting At
@@ -1022,6 +1024,7 @@
             </div>
           </div>
           <h2
+            id="contact"
             class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
           >
             Contact Us
@@ -1203,7 +1206,9 @@
                 </div>
               </summary>
               <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
-                We service cars, bikes, and scooters.
+                Simply open the SmartWash app, enter your pin code, select your
+                service type, choose a time slot, and confirm your booking.
+                You’ll get a confirmation screen once the booking is complete.
               </p>
             </details>
             <details
@@ -1213,7 +1218,7 @@
                 class="flex cursor-pointer items-center justify-between gap-6 py-2"
               >
                 <p class="text-[#111418] text-sm font-medium leading-normal">
-                  What equipment do you use?
+                  What services can I choose from?
                 </p>
                 <div
                   class="text-[#111418] group-open:rotate-180"
@@ -1235,7 +1240,142 @@
                 </div>
               </summary>
               <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
-                We service cars, bikes, and scooters.
+                We currently provide two main services: Wash (Normal or
+                Premium), Polish
+              </p>
+            </details>
+            <details
+              class="flex flex-col rounded-xl border border-[#dcdfe5] bg-white px-[15px] py-[7px] group"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-6 py-2"
+              >
+                <p class="text-[#111418] text-sm font-medium leading-normal">
+                  How What is the difference between Normal and Premium Wash?
+                </p>
+                <div
+                  class="text-[#111418] group-open:rotate-180"
+                  data-icon="CaretDown"
+                  data-size="20px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </summary>
+              <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
+                Normal Wash: Basic cleaning, vacuuming, and foam wash Premium<br />
+                Wash: Includes deeper cleaning, steam wash, and additional care
+                for interiors/exteriors
+              </p>
+            </details>
+            <details
+              class="flex flex-col rounded-xl border border-[#dcdfe5] bg-white px-[15px] py-[7px] group"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-6 py-2"
+              >
+                <p class="text-[#111418] text-sm font-medium leading-normal">
+                  How do I know if my booking is confirmed?
+                </p>
+                <div
+                  class="text-[#111418] group-open:rotate-180"
+                  data-icon="CaretDown"
+                  data-size="20px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </summary>
+              <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
+                After confirming your details, you’ll see a Booking Confirmation
+                screen in the app. You may also receive a notification or
+                reminder.
+              </p>
+            </details>
+            <details
+              class="flex flex-col rounded-xl border border-[#dcdfe5] bg-white px-[15px] py-[7px] group"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-6 py-2"
+              >
+                <p class="text-[#111418] text-sm font-medium leading-normal">
+                  What payment methods are available?
+                </p>
+                <div
+                  class="text-[#111418] group-open:rotate-180"
+                  data-icon="CaretDown"
+                  data-size="20px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </summary>
+              <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
+                Currently, we support Cash on Delivery (COD). You pay once the
+                service is completed.
+              </p>
+            </details>
+            <details
+              class="flex flex-col rounded-xl border border-[#dcdfe5] bg-white px-[15px] py-[7px] group"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-6 py-2"
+              >
+                <p class="text-[#111418] text-sm font-medium leading-normal">
+                  Can I book wash services outside Shillong?
+                </p>
+                <div
+                  class="text-[#111418] group-open:rotate-180"
+                  data-icon="CaretDown"
+                  data-size="20px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"
+                    ></path>
+                  </svg>
+                </div>
+              </summary>
+              <p class="text-[#637288] text-sm font-normal leading-normal pb-2">
+                Not yet. If you enter a pin code outside Shillong, the app won’t
+                allow you to continue. We plan to expand to new cities soon.
               </p>
             </details>
           </div>
@@ -1276,3 +1416,11 @@
 <script setup>
 import HeaderBar from "@/components/Header.vue";
 </script>
+
+<style>
+@media (max-width: 600px) {
+  .grid > :last-child:nth-child(odd):nth-child(n + 2) {
+    grid-column: 1 / -1; /* stretch across entire row */
+  }
+}
+</style>
