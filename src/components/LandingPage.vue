@@ -1438,10 +1438,10 @@ const submitForm = () => {
 
   emailjs
     .send(
-      "service_0s6nf6q", // <-- replace with your service ID
-      "template_keppagk", // <-- replace with your template ID
+      "service_iykpx9m", // <-- replace with your service ID
+      "template_be67957", // <-- replace with your template ID
       form,
-      "LavZxzQtEbGe--I14" // <-- replace with your public key
+      "YYdMHHpXpvg8S5Re5" // <-- replace with your public key
     )
     .then(() => {
       success.value = true;
