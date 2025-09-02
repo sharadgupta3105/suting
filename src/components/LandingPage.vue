@@ -181,8 +181,7 @@
                 </h2>
                 <p class="text-[#637288] text-sm font-normal leading-normal">
                   Thorough vacuum cleaning of the interior, gentle foam wash for
-                  the exterior, steam cleaning to remove stubborn dirt and
-                  grime.
+                  the exterior removing stubborn dirt and grime.
                 </p>
               </div>
             </div>
@@ -553,29 +552,6 @@
                   </div>
                   Foam Cleaning
                 </div>
-                <div
-                  class="text-[13px] font-normal leading-normal flex gap-3 text-[#111418]"
-                >
-                  <div
-                    class="text-[#111418]"
-                    data-icon="Check"
-                    data-size="20px"
-                    data-weight="regular"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      fill="currentColor"
-                      viewBox="0 0 256 256"
-                    >
-                      <path
-                        d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"
-                      ></path>
-                    </svg>
-                  </div>
-                  Steam Cleaning
-                </div>
               </div>
             </div>
             <div
@@ -772,7 +748,7 @@
                     >₹100</span
                   >
                   <span class="text-[#111418] text-base font-bold leading-tight"
-                    >per service</span
+                    >starting from</span
                   >
                 </p>
               </div>
